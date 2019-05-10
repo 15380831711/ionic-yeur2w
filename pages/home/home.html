@@ -1,10 +1,13 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <button>资讯分类1</button>
-  <button>资讯分类2</button>
+    <button navPush="NewsPage" [navParams]="{'newsType':1}">资讯分类1</button>
+    <a navPush="NewsPage" [navParams]="{'newsType':1}">资讯分类1</a>
+    
+    <button navPush="NewsPage" [navParams]="{'newsType':2}">资讯分类2</button>
+    <a navPush="NewsPage" [navParams]="{'newsType':2}">资讯分类2</a>
 </ion-content>
